@@ -20,7 +20,7 @@ namespace SystemSprzedazyInternetowej.Models
         public int SecretCloth { get; set; }
         public string ClotCutDescription { get; set; }
 
-        public virtual Category Category { get; set; }
+        public virtual Category Category { get; set; } //reference to clothes
 
     }
 }
