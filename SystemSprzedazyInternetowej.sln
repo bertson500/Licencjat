@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemSprzedazyInternetowej", "SystemSprzedazyInternetowej\SystemSprzedazyInternetowej.csproj", "{D358799C-EDAD-4B3A-B066-1423E23038A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemSprzedazyInternetowej.Tests", "SystemSprzedazyInternetowej.Tests\SystemSprzedazyInternetowej.Tests.csproj", "{9F9C90B7-B6D4-4BA6-A3AA-0C5D2840BDC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D358799C-EDAD-4B3A-B066-1423E23038A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D358799C-EDAD-4B3A-B066-1423E23038A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D358799C-EDAD-4B3A-B066-1423E23038A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D358799C-EDAD-4B3A-B066-1423E23038A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F9C90B7-B6D4-4BA6-A3AA-0C5D2840BDC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F9C90B7-B6D4-4BA6-A3AA-0C5D2840BDC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F9C90B7-B6D4-4BA6-A3AA-0C5D2840BDC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F9C90B7-B6D4-4BA6-A3AA-0C5D2840BDC4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5988073-B200-4768-9523-8D01AADCFE53}
+	EndGlobalSection
+EndGlobal
