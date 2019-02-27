@@ -8,9 +8,9 @@ using SystemSprzedazyInternetowej.Models;
 
 namespace SystemSprzedazyInternetowej.DAL
 {
-    public class ShopContext : DbContext
+    public class ShopDboContext : DbContext
     {
-        public ShopContext() : base("ShopContext")
+        public ShopDboContext() : base("ClothShopDbo")
         {
 
         }

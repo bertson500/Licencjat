@@ -10,21 +10,24 @@ namespace SystemSprzedazyInternetowej.Controllers
 {
     public class HomeController : Controller
     {
-        private ShopContext db = new ShopContext();
+        private ShopDboContext db = new ShopDboContext();
 
         
 
         public ActionResult Index()
         {
-            Category category = new Category
+            for (int i = 0; i < 10000000; i++)
             {
-                CategoryName = "Koszulka",
-                CategoryDescription = "Ładna koszulka",
-                IconNameCategory = "koszulka.jpg"
-            };
-
-            db.Categories.Add(category);
-            db.SaveChanges();
+                Category category = new Category
+                {
+                    CategoryName = "Koszulka"+i,
+                    CategoryDescription = "Ładna koszulka" +i*2,
+                    IconNameCategory = "koszulka1.jpg"
+                };
+                db.Categories.Add(category);
+                db.SaveChanges();
+            }
+            
 
             return View();
         }
