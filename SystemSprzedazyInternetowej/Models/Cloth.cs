@@ -10,24 +10,24 @@ namespace SystemSprzedazyInternetowej.Models
     {
         public int ClothId { get; set; }
         public int CategoryId { get; set; }
-        [Required(ErrorMessage ="Nazwa jest wymagana.")]
+       // [Required(ErrorMessage ="Nazwa jest wymagana.")]
         public string NameOfClothes { get; set; }
 
-        [Required(ErrorMessage = "Rozmiar jest wymagany")]
-        [RegularExpression("^[A-Z]$",ErrorMessage = "Muszą być podane wielkie litery z zakresu od A-Z")]
-        [StringLength(2)]
+        //[Required(ErrorMessage = "Rozmiar jest wymagany")]
+        //[RegularExpression("^[A-Z]$",ErrorMessage = "Muszą być podane wielkie litery z zakresu od A-Z")]
+        //[StringLength(2)]
         public string SizeCloth { get; set; }
         //tutaj chyba zrobię listę kolorów do wyboru
         public string ColorCloth { get; set; }
         public DateTime DateAddCloth { get; set; }
         public string ImageClothFileName { get; set; }
         public string DescriptionCloth { get; set; }
-        [Required(ErrorMessage = "Cena jest wymagana, podaj cenę.")]
+        //[Required(ErrorMessage = "Cena jest wymagana, podaj cenę.")]
         public decimal ClothPrice { get; set; }
-        [Required(ErrorMessage = "Wybierz czy produkt jest z wyprzedaży")]
-        public bool SaleCloth { get; set; }
-        public int SecretCloth { get; set; }
-        public string ClotCutDescription { get; set; }
+        //[Required(ErrorMessage = "Wybierz czy produkt jest z wyprzedaży")]
+        public bool SaleCloth { get; set; } //if cloth is on sale true
+        public int SecretCloth { get; set; } //when cloth is unavailable 0 available 1
+        public string ClotCutDescription { get; set; } //short description cloths
 
         
 

@@ -14,6 +14,10 @@ namespace SystemSprzedazyInternetowej.DAL
         {
 
         }
+        static ShopDboContext()
+        {
+            Database.SetInitializer(new ClothsInitializer());
+        }
 
         public DbSet<Cloth> Cloths { get; set; }
         public DbSet<Category> Categories { get; set; }

@@ -13,6 +13,6 @@ namespace SystemSprzedazyInternetowej.Models
 
         
 
-        public virtual ICollection<Cloth> Cloth { get; set; } //Collection in which they will be stored clothes. 
+        public virtual ICollection<Cloth> Cloth { get; set; } //Collection in which they will be stored clothes.  
     }
 } 

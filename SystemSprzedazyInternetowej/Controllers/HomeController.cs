@@ -16,19 +16,7 @@ namespace SystemSprzedazyInternetowej.Controllers
 
         public ActionResult Index()
         {
-            for (int i = 0; i < 10000000; i++)
-            {
-                Category category = new Category
-                {
-                    CategoryName = "Koszulka"+i,
-                    CategoryDescription = "Ładna koszulka" +i*2,
-                    IconNameCategory = "koszulka1.jpg"
-                };
-                db.Categories.Add(category);
-                db.SaveChanges();
-            }
-            
-
+            var listCategory = db.Categories.ToList();
             return View();
         }
     }
