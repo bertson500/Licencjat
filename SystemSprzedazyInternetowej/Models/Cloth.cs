@@ -10,7 +10,7 @@ namespace SystemSprzedazyInternetowej.Models
     {
         public int ClothId { get; set; }
         public int CategoryId { get; set; }
-       // [Required(ErrorMessage ="Nazwa jest wymagana.")]
+       [Required(ErrorMessage ="Nazwa jest wymagana.")]
         public string NameOfClothes { get; set; }
 
         //[Required(ErrorMessage = "Rozmiar jest wymagany")]
@@ -28,6 +28,7 @@ namespace SystemSprzedazyInternetowej.Models
         public bool SaleCloth { get; set; } //if cloth is on sale true
         public int SecretCloth { get; set; } //when cloth is unavailable 0 available 1
         public string ClotCutDescription { get; set; } //short description cloths
+        public string ClothColleciton { get; set; }
 
         
 
