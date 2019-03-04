@@ -1,40 +1,96 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<!doctype html>
+<html lang="pl">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+
+    <body>
+        <div class="bg-secondary">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">O nas</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                        Rozwiń
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg-right">
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                        <button class="dropdown-item" type="button">Something else here</button>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="mx-auto" style="width: 200px;">
+                <a class="nav-item nav-link" href="#"><img src="~/Content/Images/logo.jpg" alt="..." class="img-thumbnail"></a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                </ul>
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="mx-auto">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link" href="#">ON</a>
+                            <a class="nav-item nav-link" href="#">ONA</a>
+                            <a class="nav-item nav-link" href="#">DZIECKO</a>
+                            <a class="nav-item nav-link" href="#">WYPRZEDAŻ</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div>
+                @RenderBody()
             </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <a class="nav-item nav-link" href="#"><img src="~/Content/Images/logo.jpg" alt="..." class="img-thumbnail"></a>
+                    </div>
+                    <div class="col">
+                        <a class="nav-item nav-link" href="#"><img src="~/Content/Images/logo.jpg" alt="..." class="img-thumbnail"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a class="nav-item nav-link" href="#"><img src="~/Content/Images/logo.jpg" alt="..." class="img-thumbnail"></a>
+                    </div>
+                    <div class="col">
+                        <a class="nav-item nav-link" href="#"><img src="~/Content/Images/logo.jpg" alt="..." class="img-thumbnail"></a>
+                    </div>
+                    <div class="col">
+                        <a class="nav-item nav-link" href="#"><img src="~/Content/Images/logo.jpg" alt="..." class="img-thumbnail"></a>
+                    </div>
+                </div>
+            </div>
+            @RenderSection("Scripts", required: false)
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         </div>
-    </div>
+    </body>
 
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
-
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
-</body>
 </html>

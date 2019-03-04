@@ -10,9 +10,15 @@ namespace SystemSprzedazyInternetowej.Models
         public string CategoryName { get; set; }
         public string CategoryDescription { get; set; }
         public string IconNameCategory { get; set; }
+        public Sex TypeSexForClient{ get; set; }
 
-        
 
         public virtual ICollection<Cloth> Cloth { get; set; } //Collection in which they will be stored clothes.  
+        public enum Sex
+        {
+            Kobieta,
+            Mezczyzna
+        }
+
     }
 } 
