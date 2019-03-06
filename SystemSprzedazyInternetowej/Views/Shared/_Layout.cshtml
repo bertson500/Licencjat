@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <link href="~/Content/css/myStyle.css" rel="stylesheet" />
+    <title>@ViewBag.Title"</title>
 </head>
 
 <body>
@@ -33,12 +34,12 @@
                     </li>
                 </ul>
             </div>
-            <div class="btn-group">
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
-                        data-display="static" aria-haspopup="true" aria-expanded="false">
+            <div class="btn-group ">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static"
+                        aria-haspopup="true" aria-expanded="false">
                     Rozwiń
                 </button>
-                <div class="dropdown-menu dropdown-menu-lg-right">
+                <div class="dropdown-menu dropdown-menu-lg-left">
                     <button class="dropdown-item" type="button">Action</button>
                     <button class="dropdown-item" type="button">Another action</button>
                     <button class="dropdown-item" type="button">Something else here</button>
@@ -48,8 +49,7 @@
 
         <div class="mx-auto" style="width: 200px;">
             <a class="nav-item nav-link" href="#">
-                <img src="~/Content/Images/logo.jpg" alt="..."
-                     class="img-thumbnail">
+                <img src="~/Content/Images/logo.jpg" alt="..." class="img-thumbnail">
             </a>
         </div>
 
@@ -58,22 +58,60 @@
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="mx-auto">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="#">ON</a>
-                        <a class="nav-item nav-link" href="#">ONA</a>
-                        <a class="nav-item nav-link" href="#">DZIECKO</a>
-                        <a class="nav-item nav-link" href="#">WYPRZEDAŻ</a>
+
+                        <div class="btn-group btn-margin">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                                    data-display="static" aria-haspopup="true" aria-expanded="false">
+                                ON
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg-right">
+                                <button class="dropdown-item" type="button">Action</button>
+                            </div>
+                        </div>
+
+                        <div class="btn-group btn-margin">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                                    data-display="static" aria-haspopup="true" aria-expanded="false">
+                                ONA
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg-right">
+                                <button class="dropdown-item" type="button">Action</button>
+                            </div>
+                        </div>
+
+                        <div class="btn-group btn-margin">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                                    data-display="static" aria-haspopup="true" aria-expanded="false">
+                                DZIECKO
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg-right">
+                                <button class="dropdown-item" type="button">Action</button>
+                            </div>
+                        </div>
+
+                        <div class="btn-group btn-margin">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                                    data-display="static" aria-haspopup="true" aria-expanded="false">
+                                WYPRZEDAŻ
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg-right">
+                                    <button class="dropdown-item" type="button">Action</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
+
         <div>
             @RenderBody()
         </div>
 
-    <footer>
+        <footer>
             <div class="stopka bg-dark">
                 <div class="container">
                     <div class="row">

@@ -19,5 +19,10 @@ namespace SystemSprzedazyInternetowej.Controllers
             var listCategory = db.Categories.ToList();
             return View();
         }
+
+        public ActionResult StaticPages(string name)
+        {
+            return View(name);
+        }
     }
 }
