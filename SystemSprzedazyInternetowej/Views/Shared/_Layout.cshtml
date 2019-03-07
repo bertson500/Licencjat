@@ -26,12 +26,6 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Kontakt</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">O nas</a>
-                    </li>
                 </ul>
             </div>
             <div class="btn-group ">
@@ -53,59 +47,7 @@
             </a>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="mx-auto">
-                    <div class="navbar-nav">
-
-                        <div class="btn-group btn-margin">
-                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
-                                    data-display="static" aria-haspopup="true" aria-expanded="false">
-                                ON
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-lg-right">
-                                <button class="dropdown-item" type="button">Action</button>
-                            </div>
-                        </div>
-
-                        <div class="btn-group btn-margin">
-                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
-                                    data-display="static" aria-haspopup="true" aria-expanded="false">
-                                ONA
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-lg-right">
-                                <button class="dropdown-item" type="button">Action</button>
-                            </div>
-                        </div>
-
-                        <div class="btn-group btn-margin">
-                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
-                                    data-display="static" aria-haspopup="true" aria-expanded="false">
-                                DZIECKO
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-lg-right">
-                                <button class="dropdown-item" type="button">Action</button>
-                            </div>
-                        </div>
-
-                        <div class="btn-group btn-margin">
-                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
-                                    data-display="static" aria-haspopup="true" aria-expanded="false">
-                                WYPRZEDAŻ
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-lg-right">
-                                    <button class="dropdown-item" type="button">Action</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
+        
 
         <div>
             @RenderBody()
@@ -118,46 +60,49 @@
                         <div class="col">
                             <div class="list-group">
                                 <p></p>
-                                <h6>Kupuj</h6>
+                                <h6 class="text-bold-white">Kupuj</h6>
                                 <ul class="list-unstyled">
-                                    <li><a href="#" class="text-light">ON</a></li>
-                                    <li><a href="#" class="text-light">ONA</a></li>
-                                    <li><a href="#" class="text-light">DZIECKO</a></li>
-                                    <li><a href="#" class="text-light">WYPRZEDAŻ</a></li>
+                                    <li><a href="@Url.Action("StaticPages","Home",new { name = "Onas" })" class="text-gray">O nas</a></li>
+                                    <li><a href="@Url.Action("StaticPages","Home",new { name = "Kontakt" })"class="text-gray">Kontakt</a></li>
+                                    <li><a href="@Url.Action("StaticPages","Home",new { name = "Opinie" })"class="text-gray">Opinie</a></li>
+                                    <li><a href="@Url.Action("StaticPages","Home",new { name = "Regulamin" })"class="text-gray">Regulamin</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col">
                             <p></p>
-                            <h6>Kupuj</h6>
+                            <h6 class="text-bold-white">Pomoc</h6>
                             <ul class="list-unstyled">
-                                <li>ON</li>
-                                <li>ONA</li>
-                                <li>DZIECKO</li>
-                                <li>WYPRZEDAŻ</li>
+                                
+                                    <li><a href="@Url.Action("StaticPages","Home",new { name = "Onas" })"class="text-gray">O nas</a></li>
+                                    <li><a href="@Url.Action("StaticPages","Home",new { name = "Kontakt" })"class="text-gray">Kontakt</a></li>
+                                    <li><a href="@Url.Action("StaticPages","Home",new { name = "Opinie" })"class="text-gray">Opinie</a></li>
+                                    <li><a href="@Url.Action("StaticPages","Home",new { name = "Regulamin" })"class="text-gray">Regulamin</a></li>
+                                    <li><a href="@Url.Action("StaticPages","Home",new { name = "Spolecznosc" })"class="text-gray">Społeczność</a></li>
+                                
+                           </ul>
+                        </div>
+                        <div class="col">
+                            <p></p>
+                            <h6 class="text-bold-white">Informacje o firmie</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="@Url.Action("StaticPages","Home",new { name = "Onas" })" class="text-gray">O nas</a></li>
+                                <li><a href="@Url.Action("StaticPages","Home",new { name = "Kontakt" })"class="text-gray">Kontakt</a></li>
+                                <li><a href="@Url.Action("StaticPages","Home",new { name = "Opinie" })"class="text-gray">Opinie</a></li>
+                                <li><a href="@Url.Action("StaticPages","Home",new { name = "Regulamin" })"class="text-gray">Regulamin</a></li>
                             </ul>
                         </div>
                         <div class="col">
                             <p></p>
-                            <h6>Kupuj</h6>
-                            <ul class="list-unstyled">
-                                <li>ON</li>
-                                <li>ONA</li>
-                                <li>DZIECKO</li>
-                                <li>WYPRZEDAŻ</li>
-                            </ul>
-                        </div>
-                        <div class="col">
+                            <h6 class="text-bold-white">Dołącz do Shop Card</h6>
+                            <div class="text-gray">Zarejestruj się teraz, aby zdobyć rabat do 60%!</div>
                             <p></p>
-                            <h6>Dołącz do Shop Card</h6>
-                            Zarejestruj się teraz, aby zdobyć rabat do 60%!
                             <p><button type="button" class="btn btn-light">Przeczytaj więcej!</button></p>
 
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-4">col-8</div>
                     <div class="col-4">col-4</div>
                 </div>
             </div>

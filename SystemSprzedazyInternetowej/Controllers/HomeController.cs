@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using SystemSprzedazyInternetowej.DAL;
 using SystemSprzedazyInternetowej.Models;
+using SystemSprzedazyInternetowej.ViewModels;
 
 namespace SystemSprzedazyInternetowej.Controllers
 {
@@ -16,7 +17,8 @@ namespace SystemSprzedazyInternetowej.Controllers
 
         public ActionResult Index()
         {
-            var listCategory = db.Categories.ToList();
+            
+
             return View();
         }
 
@@ -24,5 +26,16 @@ namespace SystemSprzedazyInternetowej.Controllers
         {
             return View(name);
         }
+        //dodaje kontroler dla menu kategorii
+        public ActionResult SideMenuCategory()
+        {
+            var categories = db.Categories.ToList();
+            
+            var vNavbarModel = new HomeViewModel
+            {
+                Categories = categories
+            };
+            return PartialView("_SideMenuCategory", vNavbarModel);
+       }
     }
 }

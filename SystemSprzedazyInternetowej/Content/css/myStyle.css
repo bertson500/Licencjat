@@ -1,3 +1,11 @@
 ﻿.btn-margin{
     margin:0 15px;
 }
+.text-gray{
+    color:gray;
+    font-size: medium;
+}
+.text-bold-white{
+    color: whitesmoke;
+    font-weight:bold;
+}

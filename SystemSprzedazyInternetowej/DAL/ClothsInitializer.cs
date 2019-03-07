@@ -16,7 +16,9 @@ namespace SystemSprzedazyInternetowej.DAL
             var category = new List<Category>
             {
                 new Category(){CategoryId = 1, CategoryName = "Koszulka", CategoryDescription ="Modna koszulka holister", IconNameCategory = "plik.jpg"},
-                new Category(){CategoryId = 2, CategoryName = "Spodnie", CategoryDescription="Super modne spodnie levis", IconNameCategory ="levis.jpg"}
+                new Category(){CategoryId = 2, CategoryName = "Spodnie", CategoryDescription="Super modne spodnie levis", IconNameCategory ="levis.jpg"},
+                 new Category(){CategoryId = 3, CategoryName = "Bluzy", CategoryDescription="Super modne spodnie levis", IconNameCategory ="levis.jpg"},
+                  new Category(){CategoryId = 4, CategoryName = "Szorty", CategoryDescription="Super modne spodnie levis", IconNameCategory ="levis.jpg"}
             };
             category.ForEach(k => context.Categories.AddOrUpdate(k));
             context.SaveChanges();

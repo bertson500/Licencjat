@@ -1,0 +1,69 @@
+﻿@model SystemSprzedazyInternetowej.ViewModels.HomeViewModel
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="mx-auto">
+            <div class="navbar-nav">
+
+                <div class="btn-group btn-margin">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                            data-display="static" aria-haspopup="true" aria-expanded="false">
+                        ON
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg-right">
+                        <!--Pobieram do dropdown menu liste kategorii z modelu HomeViewModel-->
+                        @foreach (var category in Model.Categories)
+                        {
+                            <button class="dropdown-item" type="button">@category.CategoryName</button>
+                        }
+                        
+                    </div>
+                </div>
+
+                <div class="btn-group btn-margin">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                            data-display="static" aria-haspopup="true" aria-expanded="false">
+                        ONA
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg-right">
+                        @foreach (var category in Model.Categories)
+                        {
+                            <button class="dropdown-item" type="button">@category.CategoryName</button>
+                        }
+                    </div>
+                </div>
+
+                <div class="btn-group btn-margin">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                            data-display="static" aria-haspopup="true" aria-expanded="false">
+                        DZIECKO
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg-right">
+                        @foreach (var category in Model.Categories)
+                        {
+                            <button class="dropdown-item" type="button">@category.CategoryName</button>
+                        }
+                    </div>
+                </div>
+
+                <div class="btn-group btn-margin">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                            data-display="static" aria-haspopup="true" aria-expanded="false">
+                        WYPRZEDAŻ
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg-right">
+                        @foreach (var category in Model.Categories)
+                        {
+                            <button class="dropdown-item" type="button">@category.CategoryName</button>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
